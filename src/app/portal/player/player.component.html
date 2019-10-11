@@ -6,9 +6,12 @@
 			<thead class="bg-light">
 				<tr>
 					<th scope="col">#</th>
+					<th scope="col">Pic</th>
 					<th scope="col">First Name</th>
 					<th scope="col">Last Name</th>
-					<th scope="col">Action</th>
+					<th scope="col">Country</th>
+					<th scope="col">Jersey #</th>
+
 				</tr>
 			</thead>
 			<tbody>
@@ -16,9 +19,13 @@
 					<td>
 						{{p.id}}
 					</td>
+					<td>
+						<img src={{p.image_url}} width="50" />
+					</td>
 					<td>{{p.first_name}}</td>
 					<td>{{p.last_name}}</td>
-					<td><a href="javascript:void(0)" (click)="onClick_Item(p)" class="btn btn-sm btn-info">View</a></td>
+					<td>{{p.country}}</td>
+					<td>{{p.jersey_number}}</td>
 				</tr>
 
 			</tbody>

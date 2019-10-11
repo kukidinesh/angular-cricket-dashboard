@@ -25,6 +25,7 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 import { HomeComponent } from './portal/home/home.component';
 import { PlayerComponent } from './portal/player/player.component';
 import { TeamComponent } from './portal/team/team.component';
+import { FixtureComponent } from './portal/fixture/fixture.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { TeamComponent } from './portal/team/team.component';
     PortalComponent,
     HomeComponent,
     PlayerComponent,
-    TeamComponent
+    TeamComponent,
+    FixtureComponent
   ],
   imports: [
     BrowserModule,

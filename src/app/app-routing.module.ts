@@ -5,6 +5,7 @@ import { PortalComponent } from './_layout/portal/portal.component';
 import { HomeComponent } from './portal/home/home.component';
 import { PlayerComponent } from './portal/player/player.component';
 import { TeamComponent } from './portal/team/team.component';
+import { FixtureComponent } from './portal/fixture/fixture.component';
 
 
 const routes: Routes = [
@@ -17,12 +18,20 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: "player",
+        path: "players",
+        component: PlayerComponent
+      },
+      {
+        path: "player/:id",
         component: PlayerComponent
       },
       {
         path: "team",
         component: TeamComponent
+      },
+      {
+        path: "fixtures",
+        component: FixtureComponent
       }
     ]
   },

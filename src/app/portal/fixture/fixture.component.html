@@ -1,0 +1,29 @@
+<h5>Fixtures</h5>
+<hr>
+<div class="card shadow-sm">
+	<div class="table-responsive">
+		<table class="table table-bordered mb-0">
+			<thead class="bg-light">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Title</th>
+					<th scope="col">Date</th>
+					
+					<th scope="col">v/s </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let t of fixtures">
+					<td>
+						{{t.id}}
+					</td>
+					<td>{{t.match_title}}</td>
+					<td>{{t.match_date}}</td>
+					<td><a routerLink="/player/{{t.team_1}}">{{t.team_1_name}}</a> v/s <a routerLink="/player/{{t.team_2}}">{{t.team_2_name}}</a></td>
+				</tr>
+
+			</tbody>
+			
+		</table>
+	</div>
+</div>

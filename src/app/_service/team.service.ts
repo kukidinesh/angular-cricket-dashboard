@@ -9,7 +9,7 @@ import { ParamsHelper } from '../_helper/params';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class TeamService {
   
     /**
      * 
@@ -60,20 +60,17 @@ export class UserService {
 
     }
 
-    readAll(id){
+    readAll(){
 
-        return this.http.get("http://127.0.0.1:8000/api/playerFromTeam/"+id)
-            .pipe(map(data => {
-                return data;
-            }));
+        return this.http.get("http://127.0.0.1:8000/api/teams")
+            .pipe(
+                map(
+                    data => {
+                                return data;
+                            }
+                    )
+                );
 
-    }
-
-    getAllPlayers(){
-        return this.http.get("http://127.0.0.1:8000/api/players")
-            .pipe(map(data => {
-                return data;
-            }));
     }
 
 
